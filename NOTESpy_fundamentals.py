@@ -83,7 +83,7 @@ for val in capitals.values():
      print(val)
 #to iterate through both keys and values
 for key, val in capitals.items():
-     print(key, " = ", val)
+    print(key, " = ", val)
 
 my_dict = { "name": "Noelle", "language": "Python" }
 for k in my_dict:
@@ -97,13 +97,13 @@ for k in my_dict:
 
 # another way to iterate through the keys
 for key in capitals.keys():
-     print(key)
+    print(key)
 #to iterate through the values
 for val in capitals.values():
-     print(val)
+    print(val)
 #to iterate through both keys and values
 for key, val in capitals.items():
-     print(key, " = ", val)
+    print(key, " = ", val)
 
 for count in range(0,5):
     print("looping - ", count)
@@ -169,6 +169,20 @@ sum1 = add(4,6)
 sum2 = add(1,4)
 sum3 = sum1 + sum2
 print(sum3)
+
+def beCheerful(name='', repeat=2):		# set defaults when declaring the parameters
+	print(f"good morning {name}\n" * repeat)
+beCheerful()				# output: good morning (repeated on 2 lines)
+beCheerful("tim")		        # output: good morning tim (repeated on 2 lines)
+beCheerful(name="john")			# output: good morning john (repeated on 2 lines)
+beCheerful(repeat=6)			# output: good morning (repeated on 6 lines)
+beCheerful(name="michael", repeat=5)	# output: good morning michael (repeated on 5 lines)
+# NOTE: argument order doesn't matter if we are explicit when sending in our arguments!
+beCheerful(repeat=3, name="kb")		# output: good morning kb (repeated on 3 lines)
+
+# python code below!
+arr = [1,3,5,7]
+arr[0], arr[1] = arr[1], arr[0]
 
 
 
